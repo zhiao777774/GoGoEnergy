@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/icon/website-logo.ico" type="image/x-icon">
+    <script src="http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=P++U+W6DarjHegV8XPlUr/FLQTCQjsoazb/X0CRDt+I/M6FIjq7obw==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uHB8k/uGoGxncj6B2kmsJ1OM/zyT3nXy049PZDhNF41inruyEN8ps59JUQ4h+CXlNBt8PIrs5q7F2je4cisLevxNbEtU6SusnwdOb72ZDCD9gM8xJLUx3Go2H9sV1s65WoRFHb4xHwUOJL0+uhaKDbqIiHqjYDSXcxN5oC4BTQiqzRyRydpgru6JUBh99cTZBxpllTpSeKD0cGzR97sR9IiIzrSOfslGZT2l1/Fl0bCloV7LMEI8Jh0JgDJKxc7PtbxYM5RQGAX5aetEX3VzJTQXrQBRWHErLumV1i+1NhwGwQsKLsdlMAVk5XgaPsAjpr9IJTMiMaGJbJpfhad0OG5HvSkHChNGXmBj1QmO2xTQ53MgGMIHQedJX4m4gKK1iVVzZ9kDufcvNchR0mU9nrQ==" charset="utf-8"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/fancytree-master/src/jquery.fancytree.js"></script>
+    <script src="js/fancytree-master/src/jquery.fancytree.table.js"></script>
+    <script src="js/fancytree-master/src/jquery.fancytree.glyph.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.5/chartjs-plugin-annotation.js"></script>
+    <!--script src="https://d3js.org/d3.v5.min.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js"></script>
+    <!--End of Third-Party Library js-->
+    <script src="data/districts.data.js"></script>
+    <script src="data/power-plant-location.data.js"></script>
+    <script src="js/global.init.js"></script>
+    <!--<script src="js/firebase.config.js"></script>-->
+    <script src="js/tgos-map.config.js"></script>
+    <script src="js/tgos-map.renderer.js"></script>
+    <script src="js/fancytree.config.js"></script>
+    <script src="js/nav.event-handlers.js"></script>
+    <script src="js/side-tabs.event-handlers.js"></script>
+    <script src="js/react-components/solarPanelAssessedDivision.component.js" type="text/babel"></script>
+    <script src="js/react-components/dialog.component.js" type="text/babel"></script>
+    <!--<script src="js/react-components/waveBall.component.js" type="text/babel"></script>
+    <script src="js/react-components/pieChart.component.js" type="text/babel"></script>-->
+    <script src="js/tableFilter.js"></script>
+    <script src="js/finance.utils.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/info-division.css">
+    <link rel="stylesheet" href="css/fancytree.css">
+    <link rel="stylesheet" href="css/glyphicon.css">
+    <!--<link rel="stylesheet" href="css/pie-chart.css">-->
+    <title>GoGoEnergy</title>
+</head>
+<body>
+<header>
+    <img class="banner" src="assets/img/header-image.png" alt="header image">
+</header>
+<main>
+    <div class="marquee"></div>
+    <div id="tabs-container"></div>
+    <div id="dialog-container"></div>
+    <div id="map-info-container"></div>
+    <div id="menu-container"></div>
+    <span id="nav-collapse">☰</span>
+    <nav>
+        <div class="card-header">
+            <span>
+                <h5>導航欄</h5>
+                <img src="assets/icon/arrow-left.png" alt="點擊可將導航欄隱藏">
+            </span>
+            <span>
+                <button id="btnReset" class="btn btn-xs btn-danger">重置鏡頭</button>
+                <button id="btnExpandAll" class="btn btn-xs btn-success">展開全部</button>
+                <button id="btnCollapseAll" class="btn btn-xs btn-info">收合全部</button>
+                <button id="btnDeselectAll" class="btn btn-xs btn-primary">取消選取</button>
+            </span>
+            <input type="search" class="light-table-filter form-control" data-table="fancytree-table" onfiltered="onFiltered(row)" placeholder="功能搜尋...">
+        </div>
+        <div class="card-body scrollbar">
+            <table id="treeTable" class="fancytree-table"></table>
+        </div>
+    </nav>
+    <div id="info-div">
+        <div id="info-div-header" class="card-header">
+            <span>
+                <img src="assets/icon/arrow-right.png" alt="點擊可將資訊欄隱藏">
+                <h5>資訊欄</h5>
+            </span>
+        </div>
+        <div id="info-div-body" class="card-body scrollbar"></div>
+    </div>
+    <div id="tgMap"></div>
+    <iframe id="windMap-frame" src="../GoGoEnergy/WindMap/"></iframe>
+    <div class="blocker">
+        <div id="defaultLayerGroup-container" class="group-modal"></div>
+    </div>
+</main>
+</body>
+</html>

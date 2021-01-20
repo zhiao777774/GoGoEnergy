@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+        url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-folder-open:before {
+    content:'\e118';
+}
+
+.glyphicon-folder-close:before {
+    content:'\e117';
+}
+
+.glyphicon-file:before {
+    content: '\e022';
+}
+
+.glyphicon-menu-right:before {
+    content:'\e258';
+}
+
+.glyphicon-menu-down:before {
+    content: '\e259';
+}
+
+.glyphicon-user:before {
+    content: '\e008';
+}
+
+.glyphicon-check:before {
+    content: '\e067';
+}
+
+.glyphicon-unchecked:before {
+    content: '\e157';
+}
+
+.glyphicon-record:before {
+    content: "\e165";
+}
+
+.glyphicon-home:before {
+    content: "\e021";
+}
+
+.glyphicon-cloud:before {
+    content: "\2601";
+}
+
+.glyphicon-credit-card:before {
+    content: "\e177";
+}
+
+.glyphicon-info-sign:before {
+    content: "\e086";
+}
+
+.glyphicon-bed:before {
+    content: "\e219";
+}
+
+.glyphicon-magnet:before {
+    content: "\e112";
+}
+
+.glyphicon-grain:before {
+    content: "\e239";
+}
+
+.glyphicon-flash:before {
+    content: "\e162";
+}
+
+.glyphicon-tint:before {
+    content: "\e064";
+}
+
+.glyphicon-fire:before {
+    content: "\e104";
+}
+
+.glyphicon-remove:before {
+    content: "\e014";
+}
+
+.glyphicon-oil:before {
+    content: "\e238";
+}
+
+.glyphicon-leaf:before {
+    content: "\e103";
+}
+
+.glyphicon-certificate:before {
+    content: "\e124";
+}
+
+.glyphicon-cd:before {
+    content: "\e201";
+}
+
+.glyphicon-tree-deciduous:before {
+    content: "\e200";
+}
+
+.glyphicon-tag:before {
+    content: "\e041";
+}
+
+.glyphicon-bullhorn:before {
+    content: "\e122";
+}
+
+.glyphicon-question-sign:before {
+    content: "\e085";
+}
+
+.glyphicon-book:before {
+    content: "\e043";
+}
+
+.glyphicon-flag:before {
+    content: "\e034";
+}
+
+.glyphicon-warning-sign:before {
+    content: "\e107";
+}

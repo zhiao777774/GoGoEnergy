@@ -1,0 +1,89 @@
+#nav-collapse {
+    font-size: 26px;
+    position: absolute;
+    margin: 10px;
+    z-index: 1;
+    display: none;
+}
+
+#tgMap, #info-div, nav {
+    height: inherit;
+}
+
+#info-div, nav {
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    background: rgb(245, 245, 245);
+}
+
+nav {
+    width: 300px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+nav span h5 {
+    display: inline;
+    font-weight: bold;
+}
+
+nav span img {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 3px;
+    margin-left: 170px;
+    cursor: pointer;
+}
+
+nav .card-header span:nth-child(2) {
+    display: flex;
+}
+
+nav .card-header span:nth-child(2) button {
+    flex: 1;
+    margin: 2px;
+}
+
+nav input.light-table-filter {
+    margin-top: 5px;
+}
+
+nav .card-body {
+    padding: 0;
+}
+
+nav .scrollbar {
+    height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+nav .scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+nav .scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #F5F5F5;
+}
+
+nav .scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+@media screen and (max-width: 480px) {
+    #nav-collapse {
+        display: block;
+    }
+
+    nav {
+        width: 0;
+    }
+
+    nav span img {
+        margin-left: 65vw;
+    }
+}

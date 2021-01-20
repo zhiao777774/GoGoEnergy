@@ -1,0 +1,126 @@
+table.fancytree-table {
+    overflow: hidden;
+}
+
+span.fancytree-title {
+    margin-top: -1px;
+    position: absolute;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+span.fancytree-checkbox {
+    margin-left: 12px;
+}
+
+span.fancytree-title,
+span.fancytree-icon,
+span.fancytree-custom-icon {
+    margin-left: 10px;
+}
+
+span.fancytree-empty,
+span.fancytree-vline,
+span.fancytree-expander,
+span.fancytree-icon,
+span.fancytree-checkbox,
+span.fancytree-drag-helper-img,
+#fancytree-drop-marker {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+span.fancytree-icon,
+span.fancytree-checkbox,
+span.fancytree-expander,
+span.fancytree-custom-icon {
+    margin-top: 2px;
+}
+
+img.fancytree-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-top: 2px;
+    vertical-align: top;
+    border-style: none;
+}
+
+span.fancytree-expander {
+    cursor: pointer;
+}
+
+.fancytree-exp-n span.fancytree-expander,
+.fancytree-exp-nl span.fancytree-expander {
+    background-image: none;
+    cursor: default;
+}
+
+.fancytree-exp-c span.fancytree-expander {
+    background-position: 0 -80px;
+}
+
+.fancytree-exp-c span.fancytree-expander:hover {
+    background-position: -16px -80px;
+}
+
+.fancytree-exp-cl span.fancytree-expander {
+    background-position: 0 -96px;
+}
+
+.fancytree-exp-cl span.fancytree-expander:hover {
+    background-position: -16px -96px;
+}
+
+.fancytree-exp-cd span.fancytree-expander {
+    background-position: -64px -80px;
+}
+
+.fancytree-exp-cd span.fancytree-expander:hover {
+    background-position: -80px -80px;
+}
+
+.fancytree-exp-cdl span.fancytree-expander {
+    background-position: -64px -96px;
+}
+
+.fancytree-exp-cdl span.fancytree-expander:hover {
+    background-position: -80px -96px;
+}
+
+.fancytree-exp-e span.fancytree-expander,
+.fancytree-exp-ed span.fancytree-expander {
+    background-position: -32px -80px;
+}
+
+.fancytree-exp-e span.fancytree-expander:hover,
+.fancytree-exp-ed span.fancytree-expander:hover {
+    background-position: -48px -80px;
+}
+
+.fancytree-exp-el span.fancytree-expander,
+.fancytree-exp-edl span.fancytree-expander {
+    background-position: -32px -96px;
+}
+
+.fancytree-exp-el span.fancytree-expander:hover,
+.fancytree-exp-edl span.fancytree-expander:hover {
+    background-position: -48px -96px;
+}
+
+/* Fade out expanders, when container is not hovered or active */
+.fancytree-fade-expander span.fancytree-expander {
+    transition: opacity 1.5s;
+    opacity: 0;
+}
+
+.fancytree-fade-expander:hover span.fancytree-expander,
+.fancytree-fade-expander.fancytree-treefocus span.fancytree-expander,
+.fancytree-fade-expander .fancytree-treefocus span.fancytree-expander,
+.fancytree-fade-expander [class*="fancytree-statusnode-"] span.fancytree-expander {
+    transition: opacity 0.6s;
+    opacity: 1;
+}

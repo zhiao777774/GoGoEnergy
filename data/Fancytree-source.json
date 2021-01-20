@@ -1,0 +1,158 @@
+[
+  {"title": "能源分析", "folder": true, "icon": "glyphicon glyphicon-grain", "children": [
+    {"title": "發電站建置評估", "folder": true, "type": "能源分析", "subfolder": true, "icon": "glyphicon glyphicon-question-sign", "children": [
+      {
+        "title": "建置太陽能發電站",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      },
+      {
+        "title": "建置風力發電站",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      }
+    ]},
+    {
+      "title": "火力發電溫室氣體分析",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    }
+  ]},
+  {"title": "供電資訊", "folder": true, "icon": "glyphicon glyphicon-info-sign", "children": [
+    {
+      "title": "即時供電現況",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "未來預估電力資訊",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "各縣市年度發電比例",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "各縣市年度用電比例",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "各縣市年度用電度數",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "每月供電量",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "可再生與非再生能源發電比例",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "近期能源事件",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    }
+  ]},
+  {"title": "可再生能源", "folder": true, "icon": "glyphicon glyphicon-tree-deciduous", "children": [
+    {"title": "風力發電", "folder": true, "type": "再生能源", "subfolder": true, "icon": "glyphicon glyphicon-leaf", "children": [
+      {
+        "title": "風力發電站",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      },
+      {
+        "title": "歷年風力發電量",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      }
+    ]},
+    {"title": "太陽能發電", "folder": true, "type": "再生能源", "subfolder": true, "icon": "glyphicon glyphicon-certificate", "children": [
+      {
+        "title": "太陽能發電站",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      },
+      {
+        "title": "歷年太陽能發電量",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      },
+      {
+        "title": "各縣市太陽能發展狀況",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      }
+    ]},
+    {
+      "title": "近十年再生能源結構",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "近十年再生能源裝置容量資訊",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "各縣市再生能源比例",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    },
+    {
+      "title": "各縣市再生能源購入情形",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    }
+  ]},
+  {"title": "非再生能源", "folder": true, "icon": "glyphicon glyphicon-cd", "children": [
+    {"title": "水力發電", "folder": true, "type": "非再生能源", "subfolder": true, "icon": "glyphicon glyphicon-tint", "children": [
+      {
+        "title": "水力發電站",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      },
+      {
+        "title": "水庫即時水情",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      },
+      {
+        "title": "歷年水力發電量",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      }
+    ]},
+    {"title": "火力發電", "folder": true, "type": "非再生能源", "subfolder": true, "icon": "glyphicon glyphicon-fire",  "children": [
+      {
+        "title": "火力發電站",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      },
+      {
+        "title": "近年化石燃料耗用量",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      }
+    ]},
+    {"title": "核能發電", "folder": true, "type": "非再生能源", "subfolder": true, "icon": "glyphicon glyphicon-oil", "children": [
+      {
+        "title": "核能發電站",
+        "checkbox": true,
+        "icon": "glyphicon glyphicon-tag"
+      }
+    ]},
+    {
+      "title": "年度發電比例",
+      "checkbox": true,
+      "icon": "glyphicon glyphicon-tag"
+    }
+  ]},
+  {"title": "能源小常識", "folder": true, "features": true, "icon": "glyphicon glyphicon-book"}
+]

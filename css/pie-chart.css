@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.pie-container {
+  transition: padding 0.7s ease;
+  padding: 10px 13%;
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+}
+.pie-container #pieChart {
+  max-width: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  counter-reset: break-point 80;
+}
+.pie-container #pieChart svg {
+  overflow: visible;
+  transition: width 0.7s ease;
+}
+.pie-container #pieChart path {
+  cursor: pointer;
+}
+.pie-container #pieText {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pie-container #pieText .panel {
+  border: groove 4px #222;
+  height: 90%;
+  border-radius: 7px;
+  padding: 0 3px;
+  float: left;
+  transition: height 0.7s ease, padding 0.7s ease;
+  perspective: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pie-container #pieText .panel .content-wrapper {
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+#segmentTitle, #segmentText {
+  text-shadow: 1px 1px 3px #000, 1px 1px 3px #000;
+  text-align: center;
+}
+
+#segmentTitle {
+  transition: padding 0.7s ease;
+  padding: 20px;
+  font-size: calc( 19px + (35 - 19) * (100vw - 200px) / (1314 - 200));
+}
+@media screen and (max-width: 200px) {
+  #segmentTitle {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1314px) {
+  #segmentTitle {
+    font-size: 35px;
+  }
+}
+
+#segmentText {
+  width: 100%;
+  transition: padding 0.7s ease, line-height 0.7s ease;
+  padding: 15px 20px 20px;
+  font-size: calc( 14px + (21 - 14) * (100vw - 200px) / (1314 - 200));
+  line-height: 28px;
+}
+@media screen and (max-width: 200px) {
+  #segmentText {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1314px) {
+  #segmentText {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 360px) {
+  div.pie-container {
+    padding: 10px 12%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 40;
+  }
+  div.pie-container #pieChart svg {
+    width: 100%;
+  }
+  div.pie-container #pieText {
+    margin-top: 15px;
+  }
+  div.pie-container #pieText .panel {
+    height: 230px;
+    padding: 0;
+  }
+  div.pie-container #pieText .panel #segmentTitle {
+    padding: 2px 4px 4px;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding: 2px 4px 4px;
+    line-height: 16px;
+  }
+}
+@media (min-width: 360.02px) and (max-width: 442px) {
+  div.pie-container {
+    padding: 10px 10%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 53;
+  }
+  div.pie-container #pieChart svg {
+    width: 70%;
+  }
+  div.pie-container #pieText {
+    margin-top: 15px;
+  }
+  div.pie-container #pieText .panel {
+    height: 210px;
+    padding: 0;
+  }
+  div.pie-container #pieText .panel #segmentTitle {
+    padding: 4px;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding: 4px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 442.02px) and (max-width: 575.98px) {
+  div.pie-container {
+    padding: 10px 10%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 60;
+  }
+  div.pie-container #pieChart svg {
+    width: 70%;
+  }
+  div.pie-container #pieText {
+    margin-top: 15px;
+  }
+  div.pie-container #pieText .panel {
+    height: 200px;
+    padding: 0;
+  }
+  div.pie-container #pieText .panel #segmentTitle {
+    padding: 4px;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding: 0 4px 4px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 576px) and (max-width: 637.98px) {
+  div.pie-container {
+    padding: 10px 12%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 70;
+  }
+  div.pie-container #pieChart svg {
+    width: 60%;
+  }
+  div.pie-container #pieText {
+    margin-top: 20px;
+  }
+  div.pie-container #pieText .panel {
+    padding: 0;
+    height: 205px;
+  }
+  div.pie-container #pieText .panel #segmentTitle {
+    padding: 8px;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding: 0 8px 8px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 638px) and (max-width: 767px) {
+  div.pie-container {
+    padding: 10px 15%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 80;
+  }
+  div.pie-container #pieChart svg {
+    width: 60%;
+  }
+  div.pie-container #pieText {
+    margin-top: 20px;
+  }
+  div.pie-container #pieText .panel {
+    padding: 0 3px;
+    height: 270px;
+  }
+  div.pie-container #pieText .panel #segmentTitle {
+    padding: 15px;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding: 15px;
+    line-height: 27px;
+  }
+}
+@media (min-width: 767.02px) and (max-width: 965px) {
+  div.pie-container {
+    padding: 10px 4%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 50;
+  }
+  div.pie-container #pieText .panel {
+    height: 82%;
+    padding: 0;
+  }
+  div.pie-container #pieText .panel #segmentTitle {
+    padding: 8px;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding: 0 8px 8px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 965.02px) and (max-width: 1314px) {
+  div.pie-container {
+    padding: 10px 5%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 60;
+  }
+  div.pie-container #pieText .panel {
+    height: 70%;
+  }
+  div.pie-container #pieText .panel #segmentTitle {
+    padding: 10px;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding: 5px 10px 10px;
+  }
+}
+@media (min-width: 1314.02px) and (max-width: 1480px) {
+  div.pie-container {
+    padding: 10px 8%;
+  }
+  div.pie-container #pieChart {
+    counter-reset: break-point 70;
+  }
+  div.pie-container #pieText .panel #segmentText {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  #pieChart {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+    transition: 1s;
+    max-width: 50%;
+  }
+
+  .text-container {
+    width: 100%;
+    min-height: 0;
+  }
+}
+@media (min-width: 768px) {
+  #pieChart {
+    transition: 1s;
+  }
+}
+
+/*# sourceMappingURL=pie-chart.css.map */
